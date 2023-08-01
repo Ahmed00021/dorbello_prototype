@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
  
-const connectionString = "PGPASSWORD=uObStCk0t8nI4O65jYEJ psql -h containers-us-west-60.railway.app -U postgres -p 7390 -d railway"
+const connectionString = "postgresql://postgres:uObStCk0t8nI4O65jYEJ@containers-us-west-60.railway.app:7390/railway"
 
 const pool = new Pool({
     connectionString,
