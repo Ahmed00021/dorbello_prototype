@@ -14,9 +14,9 @@ app.get('/test', async (req, res) => {
         res.status(200).json({
             status: 'success',
             results: results.rows.length,
-            data: {
-                rows_from_database: results.rows
-            },
+            // data: {
+            //     rows_from_database: results.rows
+            // },
     });
     } catch (err) {
         console.log(err);
