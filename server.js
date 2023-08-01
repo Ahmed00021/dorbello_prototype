@@ -8,11 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send("Hello");
-});
-
-app.get('/test', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         const results = await db.query('SELECT * FROM test_user_data;');
         res.status(200).json({
